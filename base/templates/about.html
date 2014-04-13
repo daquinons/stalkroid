@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block css %}
+{{block.super}}
+{% endblock css %}
+
+{% block content %}
+    <div class="container">
+      <div class="row">
+      <b>Brief Description :</b>
+<p>Stalkroid project emphasizes on tracking of asteroids which are in close proximity to Earth on a daily basis. The data information which we are using for graphical representation is taken from NASA’s Near Earth Object Program. 
+The information conveyed are asteroid's name, its size in meters, its closest distance to Earth in Kilometers and its relative velocity  in kilometer per second. The date mentioned is the date of asteroid’s closest approach to our planet. </p>
+
+<b>Data Statistics:</b> 
+<p>It is immensely vital to mention about the data statistics and observation techniques to have a better insight and perspective for the asteroid study.
+Size is calculated from the Absolute Magnitude and  Asteroid Albedo of the asteroid. Absolute Magnitude is the hypothetical brightness of the object measured from a fixed distance. This hypothesis is used as standard for each measurement of asteroid. Asteroid albedo is the fraction of light reflected by the asteroid's body. As asteroid's shape is mostly irregular, the albedo factor changes with the angle of observation. Size is basically the major and minor axis of asteroid which is just an approximation as the parameter Asteroid Albedo varies randomly.
+By continuously observing asteroid’s orbital path, we can use Newtonian and Kepler Laws to frame the orbital path of the asteroid. By these we can know its closest and farthest distance to Earth and the time it reaches to closest approach and the farthest. We are showing in our project the dates where the asteroid is in close proximity to Earth in its orbit for better analysis, observation and scrutiny for their study.</p>
+
+<p>Relative velocity is used to track the velocity of the asteroids with reference to earth, keeping Earth as stationary or rest frame. </p>
+
+<b>Target Group:</b>
+<p>Using this project, amateur astronauts, space techies and scientists can observe and track these asteroids, study their orbital behaviour and analyse the gravitational impacts. Various observatories and laboratories can perform experiments using infrared, ultraviolet or x ray imaging spectroscopy to study the chemistry and science of material of these asteroids.</p>
+      </div>
+    </div>
+{% endblock %}

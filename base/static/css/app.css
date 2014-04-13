@@ -1,6 +1,9 @@
 body {
     background-color: #02001d;
     color: #dcdcdc;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
