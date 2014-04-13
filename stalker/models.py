@@ -10,6 +10,7 @@ class Asteroid(models.Model):
     diameter = models.CharField(max_length=25)
     velocity = models.FloatField()
     next_to_earth = models.BooleanField()
+    link = models.URLField()
 
     class Meta:
         app_label = 'stalker'

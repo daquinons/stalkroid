@@ -36,7 +36,8 @@ def run():
             asteroid.diameter = diameter
             asteroid.velocity = velocity
             asteroid.next_to_earth = True
+            asteroid.link = url
             asteroid.save()
         else:
-            new_asteroid = Asteroid(name=name, closest_date=date, closest_distance=distance, diameter=diameter, velocity=velocity, next_to_earth=True)
+            new_asteroid = Asteroid(name=name, closest_date=date, closest_distance=distance, diameter=diameter, velocity=velocity, next_to_earth=True, link=url)
             new_asteroid.save()
