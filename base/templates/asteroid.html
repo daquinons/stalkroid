@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block page_title %}Information about {{ object.name }} | Stalkroid{% endblock %}
+{% block css %}
+{{block.super}}
+{% endblock css %}
+
+{% block content %}
+    <div class="container">
+      <h2 class="text-center asteroid-name">Asteroid Name: {{ object.name }}</h2>
+      <h5 class="text-center">It'll be {{ object.closest_distance }} Km away from Earth on {{ object.closest_date }}</h5>
+      <div class="row text-center">
+        <div id="asteroid" class="circle text-center" style="width: 100px; height: 100px;"></div>
+</div>
+<div class="row data">
+  <div class="col-md-6 col-md-offset-3 text-center">
+  
+  <p>Velocity: {{ object.velocity }} Km/sec</p>
+  <p>Diameter: {{ object.diameter }}</p>
+  <p><a href="{{ object.link }}" target="_blank">Learn more about the asteroid in the NASA website</a></p>
+  
+  
+  
+</div>
+</div>
+      </div>
+    </div>
+
+{% endblock %}

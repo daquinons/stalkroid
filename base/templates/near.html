@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block css %}
+{{block.super}}
+{% endblock css %}
+
+{% block content %}
+    <div class="container">
+      <div class="row">
+      <h2 class="text-center">Asteroids near to the Earth right now</h2>
+        <table class="table">
+      <thead>
+        <tr>
+          <th>Asteroid Name</th>
+          <th>Diameter</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for asteroid in near_asteroids %}
+        <tr>
+          <td>{{ asteroid.name }}</td>
+          <td>{{ asteroid.diameter }}</td>
+          <td><a href="./asteroid/{{ asteroid.slug }}">More information</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+      </div>
+    </div>
+
+{% endblock %}

@@ -39,13 +39,13 @@
   <![endif]-->
   <header>
     {% block header %}
-        <div class="container logo text-center"><img class="img-responsive" src="{% static 'img/logo.png' %}">
+        <div class="container logo text-center"><a href="/"><img class="img-responsive" src="{% static 'img/logo.png' %}"></a>
         </div>
         <div class="container">
         <div class="menu row text-center">
-            <div class="col-md-4"><a href="./">Near Asteroids</a></div>
-            <div class="col-md-4"><a href="./why">Why to track asteroids?</a></div>
-            <div class="col-md-4"><a href="./about">About this project</a></div>
+            <div class="col-md-4"><a href="/">Near Asteroids</a></div>
+            <div class="col-md-4"><a href="/why">Why To Track Asteroids?</a></div>
+            <div class="col-md-4"><a href="/about">About This Project</a></div>
         </div>
         </div>
     {% endblock %}
